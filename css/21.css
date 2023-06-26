@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(207, 207, 207);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(16, 33, 34);
+    height: 64px;
+}
+
+nav h1 {
+    font-family: cursive;
+    color: white;
+    padding: 0px 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin-top: 30px;
+}
+
+.container .first {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+    justify-content: center;
+
+}
+
+.box {
+    font-size: 95px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+.info {
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.anim {
+    animation-name: a;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+
+@keyframes a {
+    50% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%s;
+    }
+}
+
+.first .box:hover {
+    background-color: rgb(132, 132, 132);
+    justify-content: center;
+}
+
+.container .boxText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    font-size: 20px;
+    padding: 3px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    margin: 5px 10px;
+    cursor: pointer;
+    /* transition: 0.5s; */
+}
+
+button:hover {
+    box-shadow: 0 0 20px black;
+}
+
+.second {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.second h1 {
+    font-size: 35px;
+    font-family: cursive;
+    margin: 5px 0px;
+    border-bottom: 1px solid black;
+}
+
+.gif {
+    width: 0px;
+    height: 0px;
+    border-radius: 22px;
+    margin: 5px 20px;
+    transition: 0.9s;
+
+}
+
+.br {
+    border-right: none;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bt {
+    border-top: none;
+}
+
+.bb {
+    border-bottom: none;
+}
+
+
+
+@media (max-width: 790px) {
+    .box {
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 742px) {
+    .container .first {
+        grid-template-columns: repeat(3, 23vw);
+        grid-template-rows: repeat(3, 20vw);
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 496px) {
+    .nav_h {
+        font-size: 30px;
+    }
+}
